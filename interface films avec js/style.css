@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(background/eran_raya.jpg);
+    background-size: 120% ;
+    background-position: center;
+    /*transition: background-position 0.5s ease;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    transition: 0s step-end;
+}
+
+.content
+{
+    display: flex;
+    gap: 120vh;
+}
+
+.search{
+    display: flex;
+    gap: 8vh;
+}
+
+.search ion-icon{
+    font-size: 30px;
+}
+
+.search img
+{
+    border-radius: 40%;
+}
+
+.parcours ul
+{
+    list-style: none;
+    display: flex;
+    gap: 8vh;
+}
+
+.parcours a{
+    color: #fff;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.parcours a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.films
+{
+    margin-top: 10vh;
+}
+
+.cadre_title
+{
+    width: 70vh;
+    height: 20vh;
+}
+.films h1
+{
+    font-weight: 700;
+    font-size: 7vh;
+}
+
+.align
+{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 2.8vh;
+}
+
+.align #pourcent
+{
+    color: green;
+}
+
+.play_add{
+    display: flex;
+    gap: 1.4vh;
+}
+
+.play_add button{
+    width: 17vh;
+    height: 3.9vh;
+    border-radius: 2vh;
+    color: #fff;
+    background-color: blueviolet;
+    border-width: 0;
+    font-size: 1.8vh;
+
+}
+
+.play_add ion-icon{
+    font-size: 40px;
+
+}
+
+.list_films
+{
+    margin-top: 8vh;
+}
+
+.scroll
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.747);
+    height: 320px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    overflow: auto;
+    z-index: 4;
+}
+.scroll img
+{
+    border-radius: 25px;
+
+    transition: 1s;
+    z-index: 10;
+}
+
+.scroll img:hover
+{
+    transform: scale(1.1, 1.15);
+    
+}
+.description .next
+{
+    margin-left: 0px;
+    padding: 10px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: aqua;
+    border-radius: 10%;
+}
+
+
+input[type="text"]
+{
+    height: 2.8vh;
+    outline: none;
+    width: 40vh;
+}
+
+textarea
+{
+    min-height: 5vh;
+    outline: none;
+    width: 40vh;
+    min-width: 40vh;
+    max-height: 30vh;
+
+}
+
+#add_films
+{
+   
+    position: absolute;
+    z-index: 300;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 13px;
+    height: 70vh;
+    width: 90vh;
+    border: 100vh solid rgba(24, 22, 22, 0.397);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(background/fond_rebelle.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    transition: 2s ease;
+    animation: Richel 2.1s; 
+
+}
+
+@keyframes Richel{
+    0%{
+        height: 10vh;
+        width: 20vh;
+    }
+    20%{
+        height: 20vh;
+        width: 30vh;
+    }
+    40%{
+        height: 30vh;
+        width: 40vh;
+    }
+    60%{
+        height: 40vh;
+        width: 50vh;
+    }
+    80%{
+        height: 50vh;
+        width: 50vh;
+    }
+    100%
+    {
+        height: 70vh;
+        width: 80vh;
+    }
+    
+}
+.center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#add_films button
+{
+    color: white;
+    font-size: 2vh;
+    background-color: rgb(37, 221, 37);
+    height: 4vh;
+    border-radius: 12px;
+    width: 12vh;
+    margin-left: 30%;
+}
+
+input[type="file"]
+{
+    height: 4vh;
+    outline: none;
+
+}
+label
+{
+    font-size: 1.7vh;
+}
+

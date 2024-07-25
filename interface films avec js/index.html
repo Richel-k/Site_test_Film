@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Interface</title>
+</head>
+<body>
+
+    <div class="content">
+
+        <span class="parcours">
+            <ul class="info">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Movies</a> </li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </span>
+
+        <div class="search">
+            <ion-icon name="search-outline"></ion-icon>
+            <img src="images/smile.png" alt="smile" class="account" height="60px" height="6x0">
+        </div>
+    </div>
+    
+    <div class="films">
+        <div class="cadre_title">
+            <h1 class="title" id="title">RAYA AND THE LAST DRAGON</h1>
+            <br>
+            
+        </div>
+
+        <div class="align">
+            <h4>A disney original film </h4>
+            <h5 id="pourcent">98 % match</h5>
+            <h5>2021</h5>
+        </div>
+        <br>
+        <div class="play_add">
+            <button>PLAY</button>
+            <br>    
+            <ion-icon name="add-circle-outline" onclick="to_add();"></ion-icon>
+        </div>
+    </div>
+
+    <div class="list_films">
+        <h2>MY LIST</h2>
+        <div class="scroll" id="scroll">
+            <img src="images/raya.jpg" alt="RAYA AND THE LAST DRAGON" height="300px" width="300px">
+            <img src="images/blade_runner.jpg" alt="BLADE RUNNER 2049" height="300px" width="300px">
+            <img src="images/inception.jpg" alt="INCEPTION" height="300px" width="300px">
+            <img src="images/her.jpg" alt="HER" height="300px" width="300px">
+            <img src="images/gone_girl.jpeg" alt="Gone Girl" height="300px" width="300px">
+            <img src="images/intersellar.jpeg" alt="INTERSTELLAR" height="300px" width="300px">
+            <img src="images/dunkirk_5.webp" alt="DUNKIRK" height="300px" width="300px">
+            <img src="images/Atlas.jpg" alt="ATLAS" height="300px" width="300px">
+            <img src="images/joy_or_life.jpg" alt="JOY OF LIFE" height="300px" width="300px">
+            <img src="images/Die_hart2.jpg" alt="DIE HART 2" height="300px" width="300px">
+            <img src="images/sword_stride.jpg" alt="SWORD SNOW STRIDE" height="300px" width="300px">
+        </div>
+    </div>
+    
+
+
+
+    <div class="add_films" id="add_films">
+        <div class="center">
+            <input type="Text" name="name of film" id="titleadd"  placeholder="enter the name of the film" required>
+            <br> <br>
+            <label for="description">description</label>
+            <textarea name="description" id="descriptionadd" value="enter a description of the film" required>
+
+            </textarea>
+            <br/> <br>
+            <label for="filee">sélectionner une image pour le film à ajouter</label>
+            <input type="file" name="filee" id="filee" accept="image/*">
+            <br>
+            <label for="fond">sélectionner une image de fond</label>
+            <input type="file" name="fond" id="fond" accept="image/*">
+            <br> <br>
+            <button onclick="get_new_file();" id="get">submit</button>
+    </div>
+
+        
+    </div>
+    
+</body>
+<script src="data.js"></script>
+</html>

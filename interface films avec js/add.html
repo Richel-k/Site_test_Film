@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Film</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="add_films">
+        <input type="Text" name="name of film" id="titleadd"  placeholder="enter the name of the film" required>
+        <br> <br>
+        <label for="description">description</label>
+        <textarea name="description" id="descriptionadd" value="enter a description of the film" required>
+
+        </textarea>
+        <br/> <br>
+        <label for="filee">sélectionner une image pour le film à ajouter</label>
+        <input type="file" name="filee" id="filee" accept="image/*">
+        <br>
+        <label for="fond">sélectionner une image de fond</label>
+        <input type="file" name="fond" id="fond" accept="image/*">
+        <br> <br>
+        <button onclick="get_new_file();" id="get">submit</button>
+
+        
+    </section>
+</body>
+
+<script src="data.js"></script>
+</html>
